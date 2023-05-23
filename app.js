@@ -1,11 +1,11 @@
 const express = require('express')
+const axios = require('axios')
+const commentsRouter = require('./routers/comments')
+const postRouter = require('./routers/posts')
+
 const app = express()
-const port = process.env.PORT || 3000
 
-app.get('/', (req, res) => {
-  res.send('Hello World')
-})
+app.use('/api/posts', postRouter)
+app.use('/api/comments', commentsRouter)
 
-app.listen(port, () => {
-  console.log(`App is running on port ${port}`);
-})
+module.exports = app
