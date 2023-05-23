@@ -37,6 +37,15 @@ Run the URL in your browser
 Where FINALPATH is either "posts" or "comments", and what is in the square brackets is an optional query parameter, where x is a positive integer.
 
 
+## Demo
+
+Click [here](https://edustipend-pre-work-kwzn.onrender.com/), and then modify the URL by appending:
+```bash
+  /api/FINALPATH[?limit=x]
+```
+Where FINALPATH is either "posts" or "comments", and what is in the square brackets is an optional query parameter, where x is a positive integer
+
+
 ## License
 
 [MIT](https://choosealicense.com/licenses/mit/)
